@@ -175,7 +175,31 @@
   }
   .insight strong { color: var(--gold-light); font-weight: 600; }
 
-  /* ── SECTION HEADINGS ── */
+  .bookmark-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .bookmark-link {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: 2px;
+    transition: opacity 0.15s;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  }
+  .bookmark-link:hover { opacity: 0.75; }
+  .bookmark-link.bl1 { background: var(--block1); color: white; }
+  .bookmark-link.bl2 { background: var(--block2); color: white; }
+  .bookmark-link.bl3 { background: var(--block3); color: #0a0a0a; text-shadow: none; }
+  .bookmark-link.bl4 { background: var(--block4); color: white; }
+  .bookmark-link.bl5 { background: var(--block5); color: #0a0a0a; text-shadow: none; }
+  .bookmark-link.blg { background: var(--surface2); color: var(--muted); border: 1px solid var(--border); text-shadow: none; }
   .section-heading {
     display: flex;
     align-items: baseline;
@@ -540,23 +564,25 @@
 <main>
 
   <!-- STRATEGIC RATIONALE -->
-  <div class="insight">
-    <div class="insight-label">Route Strategy</div>
-    <p>
-      <strong>UK/France → Hungary → Milan base</strong> — west-to-east, no backtracking. 
-      Long-haul into London on Singapore Airlines, Eurostar to Paris, then fly to Budapest. 
-      After Hungary, fly direct to <strong>Milan Malpensa</strong> — then use Milan as a 6-night hub 
-      for day trips by <strong>Frecciarossa</strong>: Bologna (1h), Verona (1h 10m), Genoa (1h 30m) 
-      and more, all without moving accommodation. Return home same-city from London, 
-      flying out via Singapore Airlines LGW → SIN → AKL.
-    </p>
+  <div class="insight" id="bookmarks">
+    <div class="insight-label">Bookmarks</div>
+    <div class="bookmark-grid">
+      <a href="#block1" class="bookmark-link bl1">Block 1 — London & Paris</a>
+      <a href="#block2" class="bookmark-link bl2">Block 2 — Hungary</a>
+      <a href="#block3" class="bookmark-link bl3">Block 3 — Milan</a>
+      <a href="#block4" class="bookmark-link bl4">Block 4 — London Return</a>
+      <a href="#block5" class="bookmark-link bl5">Block 5 — Singapore</a>
+      <a href="#timeline" class="bookmark-link blg">Week by Week</a>
+      <a href="#getting-around" class="bookmark-link blg">Getting Around</a>
+      <a href="#practical" class="bookmark-link blg">Practical Notes</a>
+      <a href="#budget" class="bookmark-link blg">Budget Summary</a>
+    </div>
   </div>
 
   <!-- ═══════════════════════════════════════ -->
   <!-- BLOCK 1: UK + FRANCE -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
-    <h2>Block 1 — London &amp; Paris</h2>
+  <div class="section-heading" id="block1">
     <span class="days-badge b1">4 nights</span>
   </div>
   <div class="block-divider b1"></div>
@@ -636,7 +662,7 @@
     </div>
   </div>
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="block2">
     <h2>Block 2 — Hungary</h2>
     <span class="days-badge b2">7 nights</span>
   </div>
@@ -711,7 +737,7 @@
     </div>
   </div>
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="block3">
     <h2>Block 3 — Milan &amp; Northern Italy</h2>
     <span class="days-badge b3">6 nights</span>
   </div>
@@ -844,7 +870,7 @@
   </div>
 
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="block4">
     <h2>Block 4 — London</h2>
     <span class="days-badge b4">2 nights</span>
   </div>
@@ -891,7 +917,7 @@
   </div>
 
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="block5">
     <h2>Block 5 — Singapore</h2>
     <span class="days-badge b5">1 night</span>
   </div>
@@ -935,7 +961,7 @@
   <!-- ═══════════════════════════════════════ -->
   <!-- TIMELINE SUMMARY -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="timeline">
     <h2>Rough Week-by-Week</h2>
   </div>
 
@@ -1017,7 +1043,7 @@
   <!-- ═══════════════════════════════════════ -->
   <!-- CITY TRANSPORT -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="getting-around">
     <h2>Getting Around Each City</h2>
     <span class="days-badge" style="background: var(--muted); color: white;">Paywave guide</span>
   </div>
@@ -1060,7 +1086,7 @@
 
   <!-- PRACTICAL TIPS -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="practical">
     <h2>Practical Notes</h2>
   </div>
 
@@ -1099,7 +1125,7 @@
   <!-- ═══════════════════════════════════════ -->
   <!-- BUDGET -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading">
+  <div class="section-heading" id="budget">
     <h2>Budget Summary</h2>
     <span class="days-badge" style="background: var(--gold); color: var(--bg);">2 people · NZD</span>
   </div>
