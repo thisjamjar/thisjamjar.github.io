@@ -1268,7 +1268,7 @@
   </div>
 
 </main>
-<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">▲</button>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'}); history.replaceState(null,'',window.location.pathname);" title="Back to top">▲</button>
 <script>
   const btn = document.getElementById('back-to-top');
   window.addEventListener('scroll', () => {
