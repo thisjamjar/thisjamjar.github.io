@@ -290,9 +290,6 @@
   .city-dot.b4 ~ div .city-name { color: var(--block4); }
   .city-dot.b5 ~ div .city-name { color: var(--block5); }
   .city-dot.b6 ~ div .city-name { color: var(--block6); }
-  .city-dot.b5 ~ div .city-name { color: var(--block5); }
-  .city-dot.b6 ~ div .city-name { color: var(--block6); }
-  .city-dot.b6 ~ div .city-name { color: var(--block6); }
   .city-notes {
     font-size: 0.82rem;
     color: var(--muted);
@@ -400,9 +397,6 @@
   .tl-item.bl4 { border-left-color: var(--block4); }
   .tl-item.bl5 { border-left-color: var(--block5); }
   .tl-item.bl6 { border-left-color: var(--block6); }
-  .tl-item.bl5 { border-left-color: var(--block5); }
-  .tl-item.bl6 { border-left-color: var(--block6); }
-  .tl-item.bl6 { border-left-color: var(--block6); }
   .tl-dot {
     position: absolute;
     left: -1.63rem;
@@ -432,9 +426,6 @@
   .tl-item.bl3 .tl-city { color: var(--block3); }
   .tl-item.bl4 .tl-city { color: var(--block4); }
   .tl-item.bl5 .tl-city { color: var(--block5); }
-  .tl-item.bl6 .tl-city { color: var(--block6); }
-  .tl-item.bl5 .tl-city { color: var(--block5); }
-  .tl-item.bl6 .tl-city { color: var(--block6); }
   .tl-item.bl6 .tl-city { color: var(--block6); }
   .tl-note {
     font-size: 0.65rem;
@@ -518,8 +509,6 @@
   .bl-b3 { background: var(--block3); color: #0a0a0a; }
   .bl-b4 { background: var(--block4); color: white; }
   .bl-b5 { background: var(--block5); color: #0a0a0a; }
-  .bl-b6 { background: var(--block6); color: #0a0a0a; }
-  .bl-b5 { background: var(--block5); color: white; }
   .bl-b6 { background: var(--block6); color: #0a0a0a; }
   .bl-gold { background: var(--gold); color: #0a0a0a; }
 
@@ -612,7 +601,7 @@
   <span class="route-arrow">▸</span>
   <span class="route-stop">LHR</span>
   <span class="route-arrow">▸</span>
-  <span class="route-stop">CDG</span>
+  <span class="route-stop">ORY</span>
   <span class="route-arrow">▸</span>
   <span class="route-stop">BUD</span>
   <span class="route-arrow">▸</span>
@@ -680,7 +669,7 @@
    </div>
 
     <div class="connections">    
-      <div class="connections-header b2"><span data-lang="en">Block 1 key connections</span><span data-lang="hu">1. blokk — főbb kapcsolatok</span></div>
+      <div class="connections-header b-gold"><span data-lang="en">Block 1 key connections</span><span data-lang="hu">1. blokk — főbb kapcsolatok</span></div>
       <div class="connection-row">
         <div class="conn-route"><span data-lang="en">Auckland → Dubai → London Heathrow</span><span data-lang="hu">Auckland → Dubai → London Heathrow</span></div>
         <div class="conn-mode"><span data-lang="en">✈ Emirates · EK449 / EK001</span><span data-lang="hu">✈ Emirates · EK449 / EK001</span></div>
@@ -939,27 +928,6 @@
       </div>
       <div class="city-duration"><span data-lang="en">Day trip from Milan · ~1h 30m each way</span><span data-lang="hu">Kirándulás Milánóból · ~1ó 30p oda-vissza</span></div>
     </div>
-
-    <div class="transit">
-      <div class="transit-line"></div>
-      <span class="transit-icon">✈</span>
-      <span><span data-lang="en">Emirates · MXP → DXB → AKL · EK092 / EK448</span><span data-lang="hu">Emirates · MXP → DXB → AKL · EK092 / EK448</span></span>
-      <div class="transit-line"></div>
-    </div>
-
-    <div class="city-card">
-      <div class="city-dot b-gold"></div>
-      <div>
-        <div class="city-name"><span data-lang="en">Milan → Dubai → Auckland</span><span data-lang="hu">Milánó → Dubai → Auckland</span></div>
-        <div class="city-notes">
-          <strong><span data-lang="en">6 Oct · MXP → DXB · EK092</span><span data-lang="hu">okt. 6. · MXP → DXB · EK092</span></strong><br><br>
-          <strong><span data-lang="en">7 Oct · DXB → AKL · EK448</span><span data-lang="hu">okt. 7. · DXB → AKL · EK448</span></strong><br><br>
-          <span data-lang="en">Flying Emirates via Dubai, straight home — no London return needed. Confirm exact departure and arrival times on emirates.com when booking.</span><span data-lang="hu">Emirates-szel Dubai-on keresztül, egyenesen haza — nincs szükség londoni visszatérésre. Foglaláskor ellenőrizd a pontos időpontokat az emirates.com-on.</span>
-        </div>
-      </div>
-      <div class="city-duration"><span data-lang="en">6–7 Oct · travel</span><span data-lang="hu">okt. 6–7. · utazás</span></div>
-    </div>
-
   </div>
 
   <div class="connections">
@@ -989,11 +957,6 @@
       <div class="conn-mode">🚂 Intercity</div>
       <div class="conn-time"><span data-lang="en">1h 30m</span><span data-lang="hu">1ó 30p</span></div>
     </div>
-    <div class="connection-row">
-      <div class="conn-route"><span data-lang="en">Milan Malpensa → Dubai → Auckland</span><span data-lang="hu">Milánó Malpensa → Dubai → Auckland</span></div>
-      <div class="conn-mode"><span data-lang="en">✈ Emirates · EK092 / EK448</span><span data-lang="hu">✈ Emirates · EK092 / EK448</span></div>
-      <div class="conn-time"><span data-lang="en">~24h total</span><span data-lang="hu">~24ó összesen</span></div>
-    </div>
     <div class="conn-note"><span data-lang="en">💡 Day trips: buy Frecciarossa tickets on Trenitalia — no need to book far ahead, but earlier is cheaper. The Malpensa Express runs every 30 min, no booking needed.</span><span data-lang="hu">💡 Kirándulásokhoz: Frecciarossa jegyeket a Trenitaliánál — nem kell messze előre foglalni, de korábban olcsóbb. A Malpensa Express 30 percenként jár, foglalás nem szükséges.</span></div>
   </div>
 
@@ -1003,7 +966,6 @@
       <a href="https://www.wizzair.com" target="_blank" class="booking-link bl-b5">WizzAir (BUD→MXP)</a>
       <a href="https://www.trenitalia.com" target="_blank" class="booking-link bl-b5"><span data-lang="en">Trenitalia (day trips)</span><span data-lang="hu">Trenitalia (kirándulások)</span></a>
       <a href="https://www.malpensaexpress.it" target="_blank" class="booking-link bl-b5">Malpensa Express</a>
-      <a href="https://www.emirates.com" target="_blank" class="booking-link bl-ink">Emirates</a>
     </div>
   </div>
 
@@ -1039,6 +1001,7 @@
   </div>
 
   <div class="connections">
+    <div class="connections-header b-gold"><span data-lang="en">Block 6 key connections</span><span data-lang="hu">6. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Milan Malpensa → Dubai → Auckland</span><span data-lang="hu">Milánó Malpensa → Dubai → Auckland</span></div>
       <div class="conn-mode"><span data-lang="en">✈ Emirates · EK092 / EK448</span><span data-lang="hu">✈ Emirates · EK092 / EK448</span></div>
@@ -1062,7 +1025,7 @@
 
   <div class="timeline">
     <div class="tl-item bl2">
-      <div class="tl-dot b2"></div>
+      <div class="tl-dot b-gold"></div>
       <div class="tl-week"><span data-lang="en">Day 1–2 · 17–18 Sep</span><span data-lang="hu">1–2. nap · szept. 17–18.</span></div>
       <div class="tl-city"><span data-lang="en">AKL → DXB → London Heathrow</span><span data-lang="hu">AKL → DXB → London Heathrow</span></div>
       <div class="tl-note"><span data-lang="en">Emirates EK449 / EK001. Depart Auckland 17 Sep, arrive London 18 Sep.</span><span data-lang="hu">Emirates EK449 / EK001. Indulás Aucklandből szept. 17-én, érkezés Londonba szept. 18-án.</span></div>
