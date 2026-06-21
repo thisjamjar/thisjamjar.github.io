@@ -226,6 +226,15 @@
   .b4 { background: var(--block4); }
   .b5 { background: var(--block5); }
   .b6 { background: var(--block6); }
+  /* Light blocks need dark text */
+  .connections-header.b1,
+  .connections-header.b3,
+  .connections-header.b5,
+  .connections-header.b6,
+  .days-badge.b1,
+  .days-badge.b3,
+  .days-badge.b5,
+  .days-badge.b6 { color: #0a0a0a; text-shadow: none; }
   .b-gold { background: var(--gold); }
   .c1 { color: var(--block1); }
   .c2 { color: var(--block2); }
@@ -327,15 +336,6 @@
     color: white;
     text-shadow: 0 1px 4px rgba(0,0,0,0.6);
   }
-  /* Light blocks need dark text — must come after base rule to win */
-  .connections-header.b1,
-  .connections-header.b3,
-  .connections-header.b5,
-  .connections-header.b6,
-  .days-badge.b1,
-  .days-badge.b3,
-  .days-badge.b5,
-  .days-badge.b6 { color: #0a0a0a; text-shadow: none; }
   .connection-row {
     display: grid;
     grid-template-columns: 1fr auto auto;
@@ -645,8 +645,8 @@
       <div>
         <div class="city-name"><span data-lang="en">Auckland → Dubai → London</span><span data-lang="hu">Auckland → Dubai → London</span></div>
         <div class="city-notes">
-          <strong><span data-lang="en">17 Sep · AKL → DXB · <a href="https://www.flightradar24.com/data/flights/ek449" target="_blank" class="booking-link bl-b1">EK449</a></span><span data-lang="hu">szept. 17. · AKL → DXB · <a href="https://www.flightradar24.com/data/flights/ek449" target="_blank" class="booking-link bl-b1">EK449</a></span></strong><br><br>
-          <strong><span data-lang="en">18 Sep · DXB → LHR · <a href="https://www.flightradar24.com/data/flights/ek1" target="_blank" class="booking-link bl-b1">EK001</a></span><span data-lang="hu">szept. 18. · DXB → LHR · <a href="https://www.flightradar24.com/data/flights/ek1" target="_blank" class="booking-link bl-b1">EK001</a></span></strong><br><br>
+          <strong><span data-lang="en">17 Sep · AKL → DXB · EK449</span><span data-lang="hu">szept. 17. · AKL → DXB · EK449</span></strong><br><br>
+          <strong><span data-lang="en">18 Sep · DXB → LHR · EK001</span><span data-lang="hu">szept. 18. · DXB → LHR · EK001</span></strong><br><br>
           <span data-lang="en">Flying Emirates via Dubai.</span><span data-lang="hu">Emirates-szel Dubai-on keresztül.</span>
         </div>
       </div>
@@ -766,7 +766,7 @@
   <!-- ═══════════════════════════════════════ -->
   <div class="section-heading" id="block4">
     <h2><span data-lang="en">Block 4 — Hungary</span><span data-lang="hu">4. blokk — Magyarország</span></h2>
-    <span class="days-badge b4"><span data-lang="en">7 nights</span><span data-lang="hu">7 éjszaka</span></span>
+    <span class="days-badge b4"><span data-lang="en">8 nights</span><span data-lang="hu">8 éjszaka</span></span>
   </div>
   <div class="block-divider b4"></div>
 
@@ -809,18 +809,18 @@
       <div class="city-dot b4"></div>
       <div>
         <div class="city-name"><span data-lang="en">Budapest — Final Days</span><span data-lang="hu">Budapest — Záró napok</span></div>
-        <div class="city-notes"><span data-lang="en">Return to Budapest for 3 nights of friend catch-ups and great dinners.</span><span data-lang="hu">Vissza Budapestre 3 éjszakára — barátok, jó vacsorák.</span></div>
+        <div class="city-notes"><span data-lang="en">Return to Budapest for 4 nights of friend catch-ups and great dinners.</span><span data-lang="hu">Vissza Budapestre 4 éjszakára — barátok, jó vacsorák.</span></div>
       </div>
-      <div class="city-duration"><span data-lang="en">26–29 Sep · 3 nights</span><span data-lang="hu">szept. 26–29. · 3 éjszaka</span></div>
+      <div class="city-duration"><span data-lang="en">26–30 Sep · 4 nights</span><span data-lang="hu">szept. 26–30. · 4 éjszaka</span></div>
     </div>
   </div>
 
   <div class="connections">
     <div class="connections-header b4"><span data-lang="en">Block 4 key connections</span><span data-lang="hu">4. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
-      <div class="conn-route"><span data-lang="en">Paris ORY → Budapest BUD</span><span data-lang="hu">Párizs ORY → Budapest BUD</span></div>
-      <div class="conn-mode"><span data-lang="en">✈ WizzAir · departs 09:10 · arrives 11:20</span><span data-lang="hu">✈ WizzAir · indul 09:10 · érkezik 11:20</span></div>
-      <div class="conn-time"><span data-lang="en">~2h 10m</span><span data-lang="hu">~2ó 10p</span></div>
+      <div class="conn-route"><span data-lang="en">Budapest BUD → Milan Malpensa MXP</span><span data-lang="hu">Budapest BUD → Milánó Malpensa MXP</span></div>
+      <div class="conn-mode"><span data-lang="en">✈ WizzAir direct</span><span data-lang="hu">✈ WizzAir közvetlen</span></div>
+      <div class="conn-time">~2h</div>
     </div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Budapest → regional cities</span><span data-lang="hu">Budapest → vidéki városok</span></div>
@@ -839,15 +839,15 @@
   <!-- ═══════════════════════════════════════ -->
   <div class="section-heading" id="block5">
     <h2><span data-lang="en">Block 5 — Milan &amp; Northern Italy</span><span data-lang="hu">5. blokk — Milánó és Észak-Olaszország</span></h2>
-    <span class="days-badge b5"><span data-lang="en">7 nights</span><span data-lang="hu">7 éjszaka</span></span>
+    <span class="days-badge b5"><span data-lang="en">6 nights</span><span data-lang="hu">6 éjszaka</span></span>
   </div>
   <div class="block-divider b5"></div>
 
   <div class="insight" style="background: var(--surface2); border-left: 3px solid var(--block5);">
     <div class="insight-label" style="color: var(--block5);"><span data-lang="en">Milan as hub — day trips by Frecciarossa</span><span data-lang="hu">Milánó mint bázis — kirándulások Frecciarossával</span></div>
     <p style="color: rgba(226,226,232,0.8);">
-      <span data-lang="en">Fly direct </span><span data-lang="hu">Közvetlen repülő </span><span data-lang="en">Budapest → Milan Malpensa</span><span data-lang="hu">Budapest → Milánó Malpensa</span><span data-lang="en">, check in once, and don't move for 7 nights. 
-      The Frecciarossa network fans out from Milano Centrale: Bologna in </span><span data-lang="hu">, bejelentkezés egyszer, 7 éjszakán át nem mozdulunk. A Frecciarossa hálózat Milánóból szétágazik: Bologna </span><span data-lang="en">1h</span><span data-lang="hu">1ó</span><span data-lang="en">, Verona in </span><span data-lang="hu">, Verona </span><span data-lang="en">1h 10m</span><span data-lang="hu">1ó 10p</span><span data-lang="en">, 
+      <span data-lang="en">Fly direct </span><span data-lang="hu">Közvetlen repülő </span><span data-lang="en">Budapest → Milan Malpensa</span><span data-lang="hu">Budapest → Milánó Malpensa</span><span data-lang="en">, check in once, and don't move for 6 nights. 
+      The Frecciarossa network fans out from Milano Centrale: Bologna in </span><span data-lang="hu">, bejelentkezés egyszer, 6 éjszakán át nem mozdulunk. A Frecciarossa hálózat Milánóból szétágazik: Bologna </span><span data-lang="en">1h</span><span data-lang="hu">1ó</span><span data-lang="en">, Verona in </span><span data-lang="hu">, Verona </span><span data-lang="en">1h 10m</span><span data-lang="hu">1ó 10p</span><span data-lang="en">, 
       Genoa in </span><span data-lang="hu">, Genova </span><span data-lang="en">1h 30m</span><span data-lang="hu">1ó 30p</span><span data-lang="en">, Florence in 1h 45m. No constant check-ins, 
       no luggage dragging. Then fly straight home via Dubai on Emirates.</span><span data-lang="hu">, Firenze 1ó 45p. Nincs folyamatos bejelentkezés, nincs bőröndcipelés. Aztán egyenesen haza Dubai-on keresztül Emirates-szel.</span>
     </p>
@@ -863,7 +863,7 @@
         the Duomo and its rooftop, the covered Galleria Vittorio Emanuele. 
         September evenings here are warm and unhurried.</span><span data-lang="hu">Közvetlen repülő Budapest → Milánó Malpensa. Egyszer bejelentkezünk és maradunk. Milánó megérdemli a lassabb felfedezést — Brera negyed, Navigli csatornák, a Dóm és tetőterasz, a fedett Galleria Vittorio Emanuele. Szeptemberi esték itt melegek és sietség nélküliek.</span></div>
       </div>
-      <div class="city-duration"><span data-lang="en">29 Sep–6 Oct · 7 nights</span><span data-lang="hu">szept. 29. – okt. 6. · 7 éjszaka</span></div>
+      <div class="city-duration"><span data-lang="en">30 Sep–6 Oct · 6 nights</span><span data-lang="hu">szept. 30. – okt. 6. · 6 éjszaka</span></div>
     </div>
 
     <div class="transit">
@@ -926,11 +926,6 @@
   <div class="connections">
     <div class="connections-header b5"><span data-lang="en">Block 5 key connections</span><span data-lang="hu">5. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
-      <div class="conn-route"><span data-lang="en">Budapest BUD → Milan Malpensa MXP</span><span data-lang="hu">Budapest BUD → Milánó Malpensa MXP</span></div>
-      <div class="conn-mode"><span data-lang="en">✈ WizzAir or EasyJet direct</span><span data-lang="hu">✈ WizzAir vagy EasyJet közvetlen</span></div>
-      <div class="conn-time">~2h</div>
-    </div>
-    <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Malpensa Airport → Milano Centrale</span><span data-lang="hu">Malpensa repülőtér → Milano Centrale</span></div>
       <div class="conn-mode"><span data-lang="en">🚂 Malpensa Express · every 30 min</span><span data-lang="hu">🚂 Malpensa Express · 30 percenként</span></div>
       <div class="conn-time"><span data-lang="en">51 min</span><span data-lang="hu">51 perc</span></div>
@@ -956,7 +951,6 @@
   <div class="booking-card">
     <div class="booking-card-title">🔖 <span data-lang="en">Book Block 5</span><span data-lang="hu">5. blokk foglalása</span></div>
     <div class="booking-links">
-      <a href="https://www.wizzair.com" target="_blank" class="booking-link bl-b5">WizzAir (BUD→MXP)</a>
       <a href="https://www.trenitalia.com" target="_blank" class="booking-link bl-b5"><span data-lang="en">Trenitalia (day trips)</span><span data-lang="hu">Trenitalia (kirándulások)</span></a>
       <a href="https://www.malpensaexpress.it" target="_blank" class="booking-link bl-b5">Malpensa Express</a>
     </div>
@@ -984,8 +978,8 @@
       <div>
         <div class="city-name"><span data-lang="en">Milan → Dubai → Auckland</span><span data-lang="hu">Milánó → Dubai → Auckland</span></div>
         <div class="city-notes">
-          <strong><span data-lang="en">6 Oct · MXP → DXB · <a href="https://www.flightradar24.com/data/flights/ek92" target="_blank" class="booking-link bl-b1">EK092</a></span><span data-lang="hu">okt. 6. · MXP → DXB · <a href="https://www.flightradar24.com/data/flights/ek92" target="_blank" class="booking-link bl-b1">EK092</a></span></strong><br><br>
-          <strong><span data-lang="en">7 Oct · DXB → AKL · <a href="https://www.flightradar24.com/data/flights/ek448" target="_blank" class="booking-link bl-b1">EK448</a></span><span data-lang="hu">okt. 7. · DXB → AKL · <a href="https://www.flightradar24.com/data/flights/ek448" target="_blank" class="booking-link bl-b1">EK448</a></span></strong><br><br>
+          <strong><span data-lang="en">6 Oct · MXP → DXB · EK092</span><span data-lang="hu">okt. 6. · MXP → DXB · EK092</span></strong><br><br>
+          <strong><span data-lang="en">7 Oct · DXB → AKL · EK448</span><span data-lang="hu">okt. 7. · DXB → AKL · EK448</span></strong><br><br>
           <span data-lang="en">Flying Emirates via Dubai, straight home — no London return needed. Confirm exact departure and arrival times on emirates.com when booking.</span><span data-lang="hu">Emirates-szel Dubai-on keresztül, egyenesen haza — nincs szükség londoni visszatérésre. Foglaláskor ellenőrizd a pontos időpontokat az emirates.com-on.</span>
         </div>
       </div>
@@ -994,18 +988,11 @@
   </div>
 
   <div class="connections">
-    <div class="connections-header b6"><span data-lang="en">Block 6 key connections</span><span data-lang="hu">6. blokk — főbb kapcsolatok</span></div>
+    <div class="connections-header b1"><span data-lang="en">Block 6 key connections</span><span data-lang="hu">6. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Milan Malpensa → Dubai → Auckland</span><span data-lang="hu">Milánó Malpensa → Dubai → Auckland</span></div>
       <div class="conn-mode"><span data-lang="en">✈ Emirates · EK092 / EK448</span><span data-lang="hu">✈ Emirates · EK092 / EK448</span></div>
       <div class="conn-time"><span data-lang="en">~24h total</span><span data-lang="hu">~24ó összesen</span></div>
-    </div>
-  </div>
-
-  <div class="booking-card">
-    <div class="booking-card-title">🔖 <span data-lang="en">Book Block 6</span><span data-lang="hu">6. blokk foglalása</span></div>
-    <div class="booking-links">
-      <a href="https://www.emirates.com" target="_blank" class="booking-link bl-b1">Emirates</a>
     </div>
   </div>
   
@@ -1044,7 +1031,7 @@
     <div class="tl-item bl3">
       <div class="tl-dot b3"></div>
       <div class="tl-week"><span data-lang="en">Day 6 · 22 Sep</span><span data-lang="hu">6. nap · szept. 22.</span></div>
-      <div class="tl-city"><span data-lang="en">Paris → Budapest (transit)</span><span data-lang="hu">Párizs → Budapest (tranzit)</span></div>
+      <div class="tl-city"><span data-lang="en">Paris → Budapest</span><span data-lang="hu">Párizs → Budapest</span></div>
       <div class="tl-note"><span data-lang="en">WizzAir ORY → BUD departs 09:10, arrives 11:20. Head straight to countryside.</span><span data-lang="hu">WizzAir ORY → BUD indul 09:10, érkezik 11:20. Egyenesen le vidékre.</span></div>
     </div>
     <div class="tl-item bl4">
@@ -1055,19 +1042,19 @@
     </div>
     <div class="tl-item bl4">
       <div class="tl-dot b4"></div>
-      <div class="tl-week"><span data-lang="en">Days 10–13 · 26–29 Sep · 3 nights</span><span data-lang="hu">10–13. nap · szept. 26–29. · 3 éjszaka</span></div>
+      <div class="tl-week"><span data-lang="en">Days 10–13 · 26–30 Sep · 4 nights</span><span data-lang="hu">10–13. nap · szept. 26–30. · 4 éjszaka</span></div>
       <div class="tl-city"><span data-lang="en">Budapest</span><span data-lang="hu">Budapest</span></div>
       <div class="tl-note"><span data-lang="en">Friend catch-ups, thermal baths, ruin bars</span><span data-lang="hu">Barátok, fürdők, romkocsmák</span></div>
     </div>
     <div class="tl-item bl4">
       <div class="tl-dot b4"></div>
-      <div class="tl-week"><span data-lang="en">Day 13 · 29 Sep</span><span data-lang="hu">13. nap · szept. 29.</span></div>
+      <div class="tl-week"><span data-lang="en">Day 14 · 30 Sep</span><span data-lang="hu">14. nap · szept. 30.</span></div>
       <div class="tl-city"><span data-lang="en">Budapest → Milan Malpensa</span><span data-lang="hu">Budapest → Milánó Malpensa</span></div>
       <div class="tl-note"><span data-lang="en">WizzAir direct BUD → MXP (~2h). Malpensa Express to city centre (51 min).</span><span data-lang="hu">WizzAir közvetlen BUD → MXP (~2ó). Malpensa Express a belvárosba (51 perc).</span></div>
     </div>
     <div class="tl-item bl5">
       <div class="tl-dot b5"></div>
-      <div class="tl-week"><span data-lang="en">Days 13–19 · 29 Sep–6 Oct · 7 nights</span><span data-lang="hu">13–19. nap · szept. 29. – okt. 6. · 7 éjszaka</span></div>
+      <div class="tl-week"><span data-lang="en">Days 13–19 · 30 Sep–6 Oct · 6 nights</span><span data-lang="hu">13–19. nap · szept. 30. – okt. 6. · 6 éjszaka</span></div>
       <div class="tl-city"><span data-lang="en">Milan — Base City</span><span data-lang="hu">Milánó — Bázisváros</span></div>
       <div class="tl-note"><span data-lang="en">Day trips by Frecciarossa: Bologna (1h), Verona (1h 10m), Genoa (1h 30m)</span><span data-lang="hu">Kirándulások Frecciarossával: Bologna (1ó), Verona (1ó 10p), Genova (1ó 30p)</span></div>
     </div>
@@ -1186,13 +1173,23 @@
       <div class="conn-time">$6,500</div>
     </div>
     <div class="connection-row">
-      <div class="conn-route"><span data-lang="en">European flights</span><span data-lang="hu">Európai repülők</span></div>
-      <div class="conn-mode">ORY→BUD + BUD→MXP</div>
-      <div class="conn-time">$900</div>
+      <div class="conn-route"><span data-lang="en">London → Paris</span><span data-lang="hu">London → Párizs</span></div>
+      <div class="conn-mode"><span data-lang="en">🚂 Eurostar</span><span data-lang="hu">🚂 Eurostar</span></div>
+      <div class="conn-time">$357</div>
+    </div>
+    <div class="connection-row">
+      <div class="conn-route"><span data-lang="en">Paris → Budapest</span><span data-lang="hu">Párizs → Budapest</span></div>
+      <div class="conn-mode"><span data-lang="en">✈ WizzAir ORY→BUD</span><span data-lang="hu">✈ WizzAir ORY→BUD</span></div>
+      <div class="conn-time">$567</div>
+    </div>
+    <div class="connection-row">
+      <div class="conn-route"><span data-lang="en">Budapest → Milan</span><span data-lang="hu">Budapest → Milánó</span></div>
+      <div class="conn-mode"><span data-lang="en">✈ WizzAir BUD→MXP</span><span data-lang="hu">✈ WizzAir BUD→MXP</span></div>
+      <div class="conn-time">$466</div>
     </div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Train tickets</span><span data-lang="hu">Vonatjegyek</span></div>
-      <div class="conn-mode"><span data-lang="en">Eurostar + Frecciarossa day trips (x3–4)</span><span data-lang="hu">Eurostar + Frecciarossa kirándulások (x3–4)</span></div>
+      <div class="conn-mode"><span data-lang="en">Frecciarossa day trips (x3–4)</span><span data-lang="hu">Frecciarossa kirándulások (x3–4)</span></div>
       <div class="conn-time">$800</div>
     </div>
   </div>
@@ -1207,11 +1204,20 @@
   </div>
 
   <div class="connections" style="margin-top: 1rem">
+    <div class="connections-header" style="background: var(--ink)"><span data-lang="en">Insurance</span><span data-lang="hu">Biztosítás</span></div>
+    <div class="connection-row">
+      <div class="conn-route"><span data-lang="en">Travel Insurance</span><span data-lang="hu">Utasbiztosítás</span></div>
+      <div class="conn-mode"><span data-lang="en">2 people</span><span data-lang="hu">2 fő</span></div>
+      <div class="conn-time">$372</div>
+    </div>
+  </div>
+
+  <div class="connections" style="margin-top: 1rem">
     <div class="connections-header" style="background: var(--gold); color: var(--bg);"><span data-lang="en">Total Estimate</span><span data-lang="hu">Becsült összköltség</span></div>
     <div class="connection-row" style="font-weight: 500;">
       <div class="conn-route"><span data-lang="en">Two people · three weeks · September</span><span data-lang="hu">Két fő · három hét · szeptember</span></div>
       <div class="conn-mode"><span data-lang="en">excl. souvenirs &amp; surprises</span><span data-lang="hu">szuvenír és meglepetések nélkül</span></div>
-      <div class="conn-time" style="font-size: 1.1rem;">~$19,000</div>
+      <div class="conn-time" style="font-size: 1.1rem;">~$20,000</div>
     </div>
   </div>
 
