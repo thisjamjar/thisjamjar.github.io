@@ -229,7 +229,6 @@
   .b5 { background: var(--block5); }
   .b6 { background: var(--block6); }
   .b-gold { background: var(--gold); }
-  .b-ink { background: var(--ink); }
   .c1 { color: var(--block1); }
   .c2 { color: var(--block2); }
   .c3 { color: var(--block3); }
@@ -331,9 +330,6 @@
     text-shadow: 0 1px 4px rgba(0,0,0,0.6);
   }
   /* Light blocks need dark text — must come after base rule to win */
-  .connections-header.b3,
-  .connections-header.b5,
-  .connections-header.b6,
   .section-heading.b1,
   .section-heading.b3,
   .section-heading.b4,
@@ -669,7 +665,7 @@
    </div>
 
     <div class="connections">    
-      <div class="connections-header b-ink"><span data-lang="en">Block 1 key connections</span><span data-lang="hu">1. blokk — főbb kapcsolatok</span></div>
+      <div class="connections-header" style="background: var(--ink)"><span data-lang="en">Block 1 key connections</span><span data-lang="hu">1. blokk — főbb kapcsolatok</span></div>
       <div class="connection-row">
         <div class="conn-route"><span data-lang="en">Auckland → Dubai → London Heathrow</span><span data-lang="hu">Auckland → Dubai → London Heathrow</span></div>
         <div class="conn-mode"><span data-lang="en">✈ Emirates · EK449 / EK001</span><span data-lang="hu">✈ Emirates · EK449 / EK001</span></div>
@@ -688,7 +684,7 @@
   <!-- ═══════════════════════════════════════ -->
   <!-- BLOCK 2: LONDON -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading" id="block2">
+  <div class="section-heading b2" id="block2">
     <h2><span data-lang="en">Block 2 — London</span><span data-lang="hu">2. blokk — London</span></h2>
     <span class="days-badge b2"><span data-lang="en">2 nights</span><span data-lang="hu">2 éjszaka</span></span>
   </div>
@@ -729,7 +725,7 @@
   </div>
 
   <div class="connections">
-    <div class="connections-header b2"><span data-lang="en">Block 2 key connections</span><span data-lang="hu">2. blokk — főbb kapcsolatok</span></div>
+    <div class="connections-header" style="background: var(--ink)"><span data-lang="en">Block 2 key connections</span><span data-lang="hu">2. blokk — főbb kapcsolatok</span></div>
 
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">London St Pancras → Paris Gare du Nord</span><span data-lang="hu">London St Pancras → Paris Gare du Nord</span></div>
@@ -752,9 +748,9 @@
   </div>
 
   <!-- ═══════════════════════════════════════ -->
-  <!-- BLOCK 2: PARIS -->
+  <!-- BLOCK 3: PARIS -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading" id="block3">
+  <div class="section-heading b3" id="block3">
     <h2><span data-lang="en">Block 3 — Paris</span><span data-lang="hu">3. blokk — Párizs</span></h2>
     <span class="days-badge b3"><span data-lang="en">2 nights</span><span data-lang="hu">2 éjszaka</span></span>
   </div>
@@ -774,7 +770,7 @@
   </div>
 
   <div class="connections">
-    <div class="connections-header b3"><span data-lang="en">Block 3 key connections</span><span data-lang="hu">3. blokk — főbb kapcsolatok</span></div>
+    <div class="connections-header" style="background: var(--ink)"><span data-lang="en">Block 3 key connections</span><span data-lang="hu">3. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Paris ORY → Budapest BUD</span><span data-lang="hu">Párizs ORY → Budapest BUD</span></div>
       <div class="conn-mode"><span data-lang="en">✈ WizzAir · departs 09:10 · arrives 11:20</span><span data-lang="hu">✈ WizzAir · indul 09:10 · érkezik 11:20</span></div>
@@ -789,7 +785,9 @@
     </div>
   </div>
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading" id="block4">
+    <!-- BLOCK 4: HUNGARY -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="section-heading b4" id="block4">
     <h2><span data-lang="en">Block 4 — Hungary</span><span data-lang="hu">4. blokk — Magyarország</span></h2>
     <span class="days-badge b4"><span data-lang="en">8 nights</span><span data-lang="hu">8 éjszaka</span></span>
   </div>
@@ -840,7 +838,7 @@
   </div>
 
   <div class="connections">
-    <div class="connections-header b4"><span data-lang="en">Block 4 key connections</span><span data-lang="hu">4. blokk — főbb kapcsolatok</span></div>
+    <div class="connections-header" style="background: var(--ink)"><span data-lang="en">Block 4 key connections</span><span data-lang="hu">4. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Budapest → regional cities</span><span data-lang="hu">Budapest → vidéki városok</span></div>
       <div class="conn-mode"><span data-lang="en">🚂 MÁV regional rail </span><span data-lang="hu">🚂 MÁV regionális vonat </span></div>
@@ -864,7 +862,9 @@
     </div>
   </div>
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading" id="block5">
+    <!-- BLOCK 5: ITALY -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="section-heading b5" id="block5">
     <h2><span data-lang="en">Block 5 — Milan &amp; Northern Italy</span><span data-lang="hu">5. blokk — Milánó és Észak-Olaszország</span></h2>
     <span class="days-badge b5"><span data-lang="en">7 nights</span><span data-lang="hu">7 éjszaka</span></span>
   </div>
@@ -951,7 +951,7 @@
   </div>
 
   <div class="connections">
-    <div class="connections-header b5"><span data-lang="en">Block 5 key connections</span><span data-lang="hu">5. blokk — főbb kapcsolatok</span></div>
+    <div class="connections-header" style="background: var(--ink)"><span data-lang="en">Block 5 key connections</span><span data-lang="hu">5. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Budapest BUD → Milan Malpensa MXP</span><span data-lang="hu">Budapest BUD → Milánó Malpensa MXP</span></div>
       <div class="conn-mode"><span data-lang="en">✈ WizzAir or EasyJet direct</span><span data-lang="hu">✈ WizzAir vagy EasyJet közvetlen</span></div>
@@ -992,7 +992,7 @@
   <!-- ═══════════════════════════════════════ -->
   <!-- BLOCK 6: RETURN FLIGHT -->
   <!-- ═══════════════════════════════════════ -->
-  <div class="section-heading" id="block6">
+  <div class="section-heading b6" id="block6">
     <h2><span data-lang="en">Block 6 — Return Flight</span><span data-lang="hu">6. blokk — Visszarepülés</span></h2>
     <span class="days-badge b6"><span data-lang="en">travel</span><span data-lang="hu">utazás</span></span>
   </div>
@@ -1021,7 +1021,7 @@
   </div>
 
   <div class="connections">
-    <div class="connections-header b6"><span data-lang="en">Block 6 key connections</span><span data-lang="hu">6. blokk — főbb kapcsolatok</span></div>
+    <div class="connections-header" style="background: var(--ink)"><span data-lang="en">Block 6 key connections</span><span data-lang="hu">6. blokk — főbb kapcsolatok</span></div>
     <div class="connection-row">
       <div class="conn-route"><span data-lang="en">Milan Malpensa → Dubai → Auckland</span><span data-lang="hu">Milánó Malpensa → Dubai → Auckland</span></div>
       <div class="conn-mode"><span data-lang="en">✈ Emirates · EK092 / EK448</span><span data-lang="hu">✈ Emirates · EK092 / EK448</span></div>
